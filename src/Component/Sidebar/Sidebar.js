@@ -1,6 +1,7 @@
 import React from 'react';
 import './Sidebar.css';
-import { AttachMoney, LineStyle, PersonOutline, Storefront, Timeline, TrendingUp,BarChart, MailOutline, ModeCommentOutlined, DynamicFeedOutlined, ErrorOutlined, WorkOutlineOutlined } from '@material-ui/icons';
+import { AttachMoney, LineStyle, PersonOutline, Storefront, Timeline, TrendingUp, BarChart, MailOutline, ModeCommentOutlined, DynamicFeedOutlined, ErrorOutlined, WorkOutlineOutlined } from '@material-ui/icons';
+import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
     return (
@@ -9,10 +10,15 @@ const Sidebar = () => {
                 <div className="sidebarMenu">
                     <h3 className="sidebarTitle">DashBoard</h3>
                     <ul className="sidebarList">
-                        <li className="sidebarListItem active">
+                        <Link className="link" to="/">
+
+                            <li className="sidebarListItem active">
                             <LineStyle className="sidebarIcon" />
                             Home
                         </li>
+
+                        </Link>
+                        
                         <li className="sidebarListItem">
                             <Timeline className="sidebarIcon"  />
                             Analytics
@@ -26,10 +32,15 @@ const Sidebar = () => {
                 <div className="sidebarMenu">
                     <h3 className="sidebarTitle">Quick Menu</h3>
                     <ul className="sidebarList">
-                        <li className="sidebarListItem">
+                        <Link className="link" to='/users'>
+
+                            <li className="sidebarListItem">
                             <PersonOutline className="sidebarIcon"  />
                             User
                         </li>
+
+                        </Link>
+                        
                         <li className="sidebarListItem">
                             <Storefront className="sidebarIcon" />
                             Products

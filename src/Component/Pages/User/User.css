@@ -121,6 +121,7 @@
 
 .userUpdateIcon{
     cursor: pointer;
+    margin-left: 10px;
 }
 
 .userUpdateUpload{

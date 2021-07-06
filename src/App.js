@@ -1,3 +1,4 @@
+import './App.css'
 import Home from "./Component/Pages/Home/Home";
 import Sidebar from "./Component/Sidebar/Sidebar";
 import Topbar from "./Component/topbar/Topbar";
@@ -8,7 +9,7 @@ import {
 } from "react-router-dom";
 import UserList from "./Component/Pages/UserList/UserList";
 import User from "./Component/Pages/User/User";
-
+import NewUser from './Component/Pages/NewUser/NewUser'
 function App() {
   return (
     <Router>
@@ -24,6 +25,10 @@ function App() {
           </Route>
           <Route path="/user/:userId">
             <User/>
+          </Route>
+
+          <Route path="/newUser">
+            <NewUser/>
           </Route>
         </Switch>
         
