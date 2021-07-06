@@ -10,6 +10,8 @@ import {
 import UserList from "./Component/Pages/UserList/UserList";
 import User from "./Component/Pages/User/User";
 import NewUser from './Component/Pages/NewUser/NewUser'
+import ProductList from './Component/Pages/ProductList/ProductList';
+import Product from './Component/Pages/Product/Product';
 function App() {
   return (
     <Router>
@@ -30,6 +32,15 @@ function App() {
           <Route path="/newUser">
             <NewUser/>
           </Route>
+
+          <Route path="/products">
+            <ProductList/>
+          </Route>
+
+          <Route path="/product/:userId">
+            <Product/>
+          </Route>
+
         </Switch>
         
       </div>

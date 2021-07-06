@@ -1,0 +1,33 @@
+.productList{
+    flex: 4;
+    padding: 20px;
+}
+
+.productListproduct{
+    display: flex;
+    align-items: center;
+}
+.productListImg{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+
+.productListIcon{
+    margin-right: 10px;
+    align-items: center !important;
+    justify-content:space-around;
+    cursor: pointer;
+    
+}
+
+.productListIcon.Edit{
+    color: blue;
+}
+
+.productListIcon.Delete{
+    color: red;
+}

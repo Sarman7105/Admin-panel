@@ -40,11 +40,13 @@ const Sidebar = () => {
                         </li>
 
                         </Link>
-                        
-                        <li className="sidebarListItem">
-                            <Storefront className="sidebarIcon" />
+                        <Link className="link" to="/products">
+                            <li className="sidebarListItem">
+                                <Storefront className="sidebarIcon" />
                             Products
-                        </li>
+                            </li>
+                        </Link>
+                        
                         <li className="sidebarListItem">
                             <AttachMoney className="sidebarIcon" />
                             Transactions
