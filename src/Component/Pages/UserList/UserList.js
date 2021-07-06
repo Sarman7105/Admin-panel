@@ -55,9 +55,9 @@ const columns = [
             return (
                 <div className="userListButtonContainer">
                     <Link to={ "user/"+params.row.id}>
-                        <Edit className="userListIcon" />
+                        <Edit className="userListIcon Edit" />
                     </Link>
-                    <DeleteOutline className="userListIcon" onClick={ ()=>handleDelete(params.row.id)}/>
+                    <DeleteOutline className="userListIcon Delete" onClick={ ()=>handleDelete(params.row.id)}/>
                 </div>
            ) 
         }

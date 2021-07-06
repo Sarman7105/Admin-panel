@@ -7,6 +7,7 @@ import {
   Route
 } from "react-router-dom";
 import UserList from "./Component/Pages/UserList/UserList";
+import User from "./Component/Pages/User/User";
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
           </Route>
           <Route path="/users">
             <UserList/>
+          </Route>
+          <Route path="/user/:userId">
+            <User/>
           </Route>
         </Switch>
         

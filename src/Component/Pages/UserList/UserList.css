@@ -20,4 +20,13 @@
     align-items: center !important;
     justify-content:space-around;
     cursor: pointer;
+    
+}
+
+.userListIcon.Edit{
+    color: blue;
+}
+
+.userListIcon.Delete{
+    color: red;
 }
