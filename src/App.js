@@ -12,6 +12,7 @@ import User from "./Component/Pages/User/User";
 import NewUser from './Component/Pages/NewUser/NewUser'
 import ProductList from './Component/Pages/ProductList/ProductList';
 import Product from './Component/Pages/Product/Product';
+import NewProduct from './Component/Pages/NewProduct/NewProduct';
 function App() {
   return (
     <Router>
@@ -31,6 +32,9 @@ function App() {
 
           <Route path="/newUser">
             <NewUser/>
+          </Route>
+          <Route path="/newProduct">
+            <NewProduct />
           </Route>
 
           <Route path="/products">
